@@ -26,14 +26,9 @@ int main(){
     tourist
 
     int t;cin>>t;
-    while(t--){
-        int n,GCD=0;cin>>n;unordered_map<int,int>m;
-        for(int i=1,x;i<=n;++i){
-            cin>>x;
-            for(int j=0;j<=30;++j)m[j]+=x&(1<<j)?1:0;
-        }
-        for(int i=0;i<=30;++i)GCD=gcd(GCD,m[i]);
-        for(int k=1;k<=n;++k)if(!(GCD%k))cout<<k pss;
+	while(t--){
+        lli b,c,d;cin>>b>>c>>d;
+        cout<<((b|(b^d))-(c&(b^d))!=d?-1:b^d);
         tnl
     }
 
