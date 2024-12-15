@@ -1,37 +1,19 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-#define tourist ios::sync_with_stdio(0);cin.tie(0); // tourist - fast input output
-
-#define pss <<' '                                   // pss - print single space
-#define pnl cout<<'\n';                             // pnl - print new line
-#define tnl if(t)pnl                                // tnl - testcase new line
-
-#define pye cout<<"YES";                            // pye - print YES
-#define pno cout<<"NO";                             // pno - print NO
-#define pyn ?cout<<"YES":cout<<"NO";                // pyn - print YES/NO
-#define pny ?cout<<"NO":cout<<"YES";                // pny - print NO/YES
-
-#define lli long long                               // lli - long long
-#define imx INT_MAX;                                // imx - INT_MAX
-#define imn INT_MIN;                                // imn - INT_MIN
-#define con const int c=1e                          // con - constant
-
-#define vii vector<int>v(n);\
-            for(int i=0;i<n;i++)cin>>v[i];          // vii - vector integer input
-#define vli vector<lli>v(n);\
-            for(int i=0;i<n;i++)cin>>v[i];          // vli - vector long long input
-
 int main(){
-    tourist
-
-    int t;cin>>t;
-	while(t--){
-	    int x;cin>>x;
-	    x^=__bit_floor(x);
-	    int z=__bit_width(x)-__popcount(x);
-	    cout<<(1<<z);tnl
-	}
+    int t,n;cin>>t;
+    for(int i=0;i<t;i++){
+        cin>>n;int ans=3,p[n];
+        for(int j=0;j<n;j++)cin>>p[j];
+        for(int l=0;l<n-1;l++){
+            for(int m=1;m<n;m++){
+                if(l+1==p[m]&&p[l]==m+1){cout<<2<<endl;ans=0;break;}
+            }
+            if(ans==0)break;
+        }
+        if(ans==3)cout<<3<<endl;
+    }
 
     return 0;
 }
