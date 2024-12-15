@@ -10,7 +10,6 @@ using namespace std;
 #define pye cout<<"YES";                            // pye - print YES
 #define pno cout<<"NO";                             // pno - print NO
 #define pyn ?cout<<"YES":cout<<"NO";                // pyn - print YES/NO
-#define pny ?cout<<"NO":cout<<"YES";                // pny - print NO/YES
 
 #define lli long long                               // lli - long long
 #define imx INT_MAX;                                // imx - INT_MAX
@@ -25,13 +24,25 @@ using namespace std;
 int main(){
     tourist
 
-    int t;cin>>t;
-	while(t--){
-	    int x;cin>>x;
-	    x^=__bit_floor(x);
-	    int z=__bit_width(x)-__popcount(x);
-	    cout<<(1<<z);tnl
-	}
+	int t;
+	cin>>t;
+
+    while(t--){
+        int n,c=0,f,a,b=0,i=0;cin>>n;
+
+        for(;i<n;++i){
+            cin>>a;
+            if(!i)f=a;
+            if(a<b)c++;
+            b=a;
+        }
+
+        if(!c)pye
+        else if(c>1)pno
+        else if(f>=a)pye
+        else pno
+        tnl
+    }
 
     return 0;
 }
