@@ -1,9 +1,9 @@
 ### 16 Jun 25  
 https://phitron.io/conceptual-session/another  
 XPSC 05 - (Module 11: Difference Array And PBDS  
-ভিডিও দেখা শুরু।
+1-Introduction ভিডিও দেখা শেষ।
 
-### 16 Jun 25  
+### 1৭ Jun 25  
 https://phitron.io/conceptual-session/another  
 XPSC 05 - (Module 11: Difference Array And PBDS  
-ভিডিও দেখা শেষ।
+2-Basic-Difference-Array ভিডিও দেখা শেষ।
